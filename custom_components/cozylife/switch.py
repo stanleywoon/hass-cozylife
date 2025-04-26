@@ -25,12 +25,10 @@ from .const import (
     SAT,
 )
 
-SCAN_INTERVAL = timedelta(seconds=20)
+SCAN_INTERVAL = timedelta(seconds=10)
 
 _LOGGER = logging.getLogger(__name__)
 _LOGGER.info(__name__)
-
-SCAN_INTERVAL = timedelta(seconds=240)
 
 async def async_setup_platform(
     hass: HomeAssistant,
